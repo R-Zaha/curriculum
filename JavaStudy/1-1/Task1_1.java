@@ -1,30 +1,30 @@
 public class Task1_1{
 	
 	public static void main(String[] args){
-		// �@int�^�� hogeInt �Ƃ������O�̕ϐ���錾���A�l�u50�v�ŏ�����
+		// ①int型の hogeInt という名前の変数を宣言し、値「50」で初期化
 		int hogeInt =50;
 		
-        // �AString�N���X�� hogeString �Ƃ������O�̕ϐ���錾�A�l�u�e�X�g�v�ŏ�����
-		String hogeString ="�e�X�g";
+        // ②Stringクラスの hogeString という名前の変数を宣言、値「テスト」で初期化
+		String hogeString ="テスト";
 
-        // �B���L�̏����ɂ��āA�������Ă���̂��R�����g���L�����Ă�������
-        // double�N���X�� hogeDouble �Ƃ������O�̕ϐ���錾���A�l�u0.2�v�ŏ��������Ă���B
+        // ③下記の処理について、何をしているのかコメントを記入してください
+        // doubleクラスの hogeDouble という名前の変数を宣言し、値「0.2」で初期化している。
         double hogeDouble = 0.2;
 
-        // �C�ϐ� hogeInt ��l�u100�v�ŏ㏑��
+        // ④変数 hogeInt を値「100」で上書き
 		hogeInt =100;
 
-        // �D�ϐ� hogeString ��l�u���i�v�ŏ㏑��
-		hogeString ="���i";
+        // ⑤変数 hogeString を値「合格」で上書き
+		hogeString ="合格";
 
-        // �E�ϐ� hogeInt �̒l��\��
+        // ⑥変数 hogeInt の値を表示
 		System.out.println(hogeInt);
 
-        // �F���L�̏����ɂ��āA�������Ă���̂��R�����g���L�����Ă�������
-        // �ϐ�hogeString �̒l��\�����Ă���B
+        // ⑦下記の処理について、何をしているのかコメントを記入してください
+        // 変数hogeString の値を表示している。
         System.out.println(hogeString);
 
-        // �G�ϐ� hogeDouble �̒l��\��
+        // ⑧変数 hogeDouble の値を表示
 		System.out.println(hogeDouble);
 	
 	}
