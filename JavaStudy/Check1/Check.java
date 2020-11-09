@@ -24,14 +24,20 @@ public class Check{
             System.out.print(data[i] + " ");
         }
         System.out.println();
-        
-        
+
+
         for (int i = 0; i < data.length; i++) {
             for (int j = 4; j > i; j--) {
                 /*
                 * 問3
                 * 以下、配列の添字を入れてソートを完成させなさい
                 */
+
+            	//System.out.print(data[i]+" ");
+            	//System.out.print(data[j]+" ");
+            	//System.out.println();
+            	//↑こちらのプリント文を参考に理解を深めました
+
                 if(data[i] > data[j]){
                   int box = data[j];
                   data[j] = data[i];
