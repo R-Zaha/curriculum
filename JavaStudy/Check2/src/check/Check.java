@@ -11,7 +11,7 @@ public class Check {
 
 	public static void main(String[] args) {
 		Check check =new Check();
-		System.out.print("printNameメソッド→");
+		System.out.println("printNameメソッド→ ");
 		check.printName(check.firstName,check.lastName);
 
 		Pet p =new Pet(Constants.CHECK_CLASS_JAVA,Constants.CHECK_CLASS_HOGE);
