@@ -31,6 +31,9 @@ public class Study {
         // Calendarクラスで定義されているCalendar.MONTHに定義されている値は0～11であり、
         //　実際の月（1～12）より1小さい値を保持しているから。
         //
+        //※再提出追記
+        //また、「(Calendar.MONTH) + 数値」では月の値に単純に数値を加算しているため、
+        //月の値が13以上になる可能性があり、年の加算減算も行われない。
         System.out.println(calendar.get(Calendar.YEAR));
         System.out.println(calendar.get(Calendar.MONTH) + 1);
         System.out.println(calendar.get(Calendar.DATE));
@@ -38,11 +41,13 @@ public class Study {
         // - この課題に関しては課題実施日によって結果が異なりますので、Wiki課題の画像とは結果が異なります。
         // - また、うるう年の場合は設定内容が正しくとも日付がズレて表示される可能性があります。
 
+        //※再提出追記
+        //MONTHへの加算を50行目ではなく47行目で行うようにした。
         calendar.add(Calendar.YEAR, 1);
-        calendar.add(Calendar.MONTH, 2);
+        calendar.add(Calendar.MONTH, 2+1);
         calendar.add(Calendar.DATE, 15);
         System.out.println(calendar.get(Calendar.YEAR));
-        System.out.println(calendar.get(Calendar.MONTH) + 1);
+        System.out.println(calendar.get(Calendar.MONTH) );
         System.out.println(calendar.get(Calendar.DATE));
 
         // うるう年判定
